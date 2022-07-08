@@ -10,7 +10,7 @@
 
 4. Documentation can be seen http://127.0.0.1:8000/docs
 
-**The main requests should be submitted in the jsion request body and look like this:**
+**The main requests should be submitted in the json request body and look like this:**
 
     {
       "operation": "str",
