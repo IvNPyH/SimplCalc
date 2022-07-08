@@ -5,7 +5,7 @@ from main import app
 client = TestClient(app)
 
 
-def test_p_istem():
+def test_plus():
     response = client.post(
         "/",
         json={"operation": "+",
@@ -20,7 +20,7 @@ def test_p_istem():
     }
 
 
-def test_p_item():
+def test_minus():
     response = client.post(
         "/",
         json={"operation": "-",
@@ -35,7 +35,7 @@ def test_p_item():
     }
 
 
-def test_get_mult():
+def test_multiplication():
     response = client.post(
         "/",
         json={"operation": "*",
@@ -50,7 +50,7 @@ def test_get_mult():
     }
 
 
-def test_get_dev():
+def test_division():
     response = client.post(
         "/",
         json={"operation": "/",
@@ -65,7 +65,7 @@ def test_get_dev():
     }
 
 
-def test_get_dessv():
+def test_division_zero():
     response = client.post(
         "/",
         json={"operation": "/",
@@ -78,7 +78,8 @@ def test_get_dessv():
         "math_operation": "Division by zero!"
     }
 
-def test_get_dexxssv():
+
+def test_symbol():
     response = client.post(
         "/",
         json={"operation": "hh",
