@@ -18,8 +18,13 @@
       "y": int
     }
 
+
 **The application handles errors:** 
 
     - Division by zero 
 
     - Entering an invalid math operator
+
+### **Additional protection**
+
+    If the application crashes, the data sent to the database at the time of the crash will be canceled
